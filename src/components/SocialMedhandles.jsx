@@ -4,7 +4,7 @@ import { FaPinterest } from "react-icons/fa"
 function SocialMedhandles() {
   return (
     <>
-       <div className="flex flex-col space-y-6 fixed top-1/4 md:right-4 right-0 transform -translate-y-center pt-20 z-15">
+       <div className="flex flex-col space-y-6 fixed top-1/4 md:right-4 right-2 transform -translate-y-center pt-20 z-15">
                 
                 <a href="/" target="_blank" rel="noopener noreferrer" className="p-3 bg-black text-white rounded-full shadow-lg hover:scale-110 hover:bg-blue-600 transition-transform">
                     <Facebook size={20} />
