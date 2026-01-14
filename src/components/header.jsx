@@ -33,14 +33,14 @@ function Header() {
       )}
 {/* Mobile Sidebar */}
     <div
-        className={`fixed top-0 left-0 h-full w-64 bg-white z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
+        className={`fixed top-0 left-0 h-full w-64 bg-red-700 z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
           isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
         <div className="p-6 flex flex-col space-y-6">
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="self-end text-gray-700"
+            className="self-end text-white"
           >
             <X />
           </button>
@@ -50,8 +50,8 @@ function Header() {
               href={item.path}
               className={`text-xl font-medium ${
                 location.pathname === item.path
-                  ? 'text-red-700'
-                  : 'text-gray-800 hover:text-red-700'
+                  ? 'text-gray-800'
+                  : 'text-white'
               }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
@@ -60,7 +60,7 @@ function Header() {
           ))}
         </div>
       </div>
-    <nav className="nav-bar fixed top-0 w-full z-50 md:p-4">
+    <nav className={`${isMobileMenuOpen?'hidden':''} nav-bar fixed top-0 w-full z-50 md:p-4`}>
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         <div className="font-dream text-2xl font-semibold text-gray-700">
           <img src={Logo} alt="Logo" className="h-12 m-4" />
