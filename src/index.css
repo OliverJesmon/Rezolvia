@@ -1,0 +1,8 @@
+@import "tailwindcss";
+:root
+{
+    background-color: #313647;
+}
+.rezolvia {
+    clip-path: ellipse(70% 55% at 0% 50%);
+}
