@@ -7,6 +7,7 @@ import MisionSection from './components/Mission.jsx'
 import SocialMedhandles from './components/SocialMedhandles.jsx'
 import Footer from './components/Footer.jsx'
 import Services from './components/Services.jsx'
+import ContactForm from './components/Contactform.jsx'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <VisionSection />
       <MisionSection />
       <Services/>
+      <ContactForm />
       <Footer />
     </>
   )
