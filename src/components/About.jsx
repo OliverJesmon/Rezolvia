@@ -43,9 +43,7 @@ const AboutSection = () => {
  <p className="text-sm opacity-80 mb-6">
           We believe successful software is not just about functionality, but about reliability, efficiency, and user experience. Through structured processes, transparent collaboration, and continuous improvement, we partner with clients to deliver solutions they can trust.
  </p>
-          <button className="border border-white px-6 py-2 rounded-full text-sm hover:bg-white hover:text-black transition">
-            LEARN MORE
-          </button>
+          
         </motion.div>
 
         

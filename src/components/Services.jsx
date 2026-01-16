@@ -25,7 +25,7 @@ const cards = [
 
 function Services() {
   return (
-    <section className="w-full py-12 px-4">
+    <section className="w-full py-12 px-4" id='services'>
       <h2 className="text-4xl font-geometric sans-serif text-left ml-20 mb-10 text-red-700">Our <span className="font-semibold text-white">Services</span></h2>
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {cards.map((card, index) => (

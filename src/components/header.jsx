@@ -1,4 +1,5 @@
 import {useEffect,useState} from 'react'
+import { Link } from 'react-router-dom'
 import Logo from '../assets/logo.png'
 import { X } from 'lucide-react';
 function Header() {
@@ -19,8 +20,9 @@ function Header() {
 
   const navItems = [
     { path: '/', label: 'Home' },
-    { path: '/services', label: 'Services' },
-    { path: '/contact', label: 'Contact' }
+    { path: '#services', label: 'Services' },
+    { path: '/digitalmedia', label: 'Digital Media' },
+    { path: '#contact', label: 'Contact' }
   ]
   return (
     <>
@@ -45,9 +47,9 @@ function Header() {
             <X />
           </button>
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.path}
-              href={item.path}
+              to={item.path}
               className={`text-xl font-medium ${
                 location.pathname === item.path
                   ? 'text-gray-800'
@@ -56,7 +58,7 @@ function Header() {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </div>
       </div>
@@ -69,7 +71,7 @@ function Header() {
         
       <div className={`hidden md:flex mb-2 ${isScrolled?'bg-black text-white transition-all duration-300':'bg-white text-black transition-all duration-300'} rounded-xl space-x-4 px-30 py-2`}>
           {navItems.map((item) => (
-            <a href={item.path} className={` relative group${
+            <Link to={item.path} className={` relative group${
                     location.pathname === item.path
                       ? 'text-red-700'
                       : 'hover:text-red-700'
@@ -80,7 +82,7 @@ function Header() {
                       ? 'scale-x-100'
                       : 'scale-x-0 group-hover:scale-x-100'
                   }`}/>
-            </a>
+            </Link>
           ))}
           </div>
           <button

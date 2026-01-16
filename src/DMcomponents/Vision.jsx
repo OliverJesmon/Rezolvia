@@ -16,7 +16,7 @@ const VisionSection = () => {
           viewport={{ once: false }}
           className="lg:w-1/2"
         >
-          <img src="https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_960_720.jpg" alt="Tech Innovation"
+          <video autoPlay muted loop src='https://cdn.pixabay.com/video/2017/11/29/13111-245530624_large.mp4' alt="Tech Innovation"
             className="w-full h-auto object-cover rounded-lg shadow-xl"
           />
         </motion.div>
@@ -31,20 +31,16 @@ const VisionSection = () => {
         >
           
           <h2 className="text-4xl md:text-5xl font-geometric sans-serif font-light leading-tight">
-            A VISION OF INNOVATIVE SOFTWARE SOLUTIONS
+            Where Vision Drives Digital Evolution
           </h2>
 
           {/* Body Text */}
           <p className="text-sm leading-relaxed mt-4">
-            To become a trusted technology partner for businesses worldwide by creating software that is intuitive, impactful, and future-ready—driving progress through innovation and excellence.
+            To be the catalyst for transformative digital growth—empowering forward-thinking brands to lead, innovate, and thrive in the digital era.
           </p>
 
           {/* CTA Button */}
-          <div className="pt-4">
-            <button className="border border-white px-6 py-2 rounded-full text-sm hover:bg-white hover:text-black transition-all duration-300" onClick={()=>navigate('#contact')}>
-              BOOK A VISIT
-            </button>
-          </div>
+          
         </motion.div>
       </div>
     </section>
