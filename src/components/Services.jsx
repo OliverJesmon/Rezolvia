@@ -36,6 +36,7 @@ function Services() {
             {card.image ? (
               <img
                 src={card.image}
+                oncontextmenu="return false;"
                 alt={card.title}
                 className="absolute inset-0 w-full h-full object-cover opacity-40 hover:scale-110 hover:opacity-90 transition-transform duration-500"
               />

@@ -10,6 +10,7 @@ function Hero() {
           src='https://cdn.pixabay.com/photo/2020/04/02/22/05/home-office-4996834_960_720.jpg'
           alt="Hero Background"
           className="w-full h-full object-cover"
+          oncontextmenu="return false;"
         />
        
       </div>

@@ -26,7 +26,7 @@ const AboutSection = () => {
           transition={{ duration: 0.8 }}
           className="lg:w-1/2"
           > {/*https://cdn.pixabay.com/video/2025/04/23/273921_large.mp4*/}
-            <video autoPlay muted loop src='https://cdn.pixabay.com/video/2025/04/23/273921_large.mp4' alt="About Us" className="rounded-lg w-full h-auto" />
+            <video autoPlay muted loop src='https://cdn.pixabay.com/video/2025/04/23/273921_large.mp4' oncontextmenu="return false;" alt="About Us" className="rounded-lg w-full h-auto" />
         </motion.div>
           <motion.div
   initial="hidden"

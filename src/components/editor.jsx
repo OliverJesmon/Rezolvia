@@ -90,14 +90,14 @@ const ScriptEditorEventLog = () => {
  
   }
   return (
-    <div className="hidden md:block w-full max-w-4xl mx-auto absolute md:right-20 rounded shadow-lg">
+    <div className="hidden md:block w-176 mx-auto absolute md:right-20 rounded shadow-lg">
       {/* Header/Toolbar */}
-      <div className={` ${darkmode?'bg-black ':'bg-gray-50'} flex flex-col justify-start p-4  space-y-5`}>
+      <div className={` ${darkmode?'bg-gray-800 ':'bg-gray-50'} flex flex-col justify-start p-4  space-y-5`}>
         <div className="flex items-center space-x-4">
           <span className="w-3 h-3 bg-red-400 rounded-full" />
           <span className="w-3 h-3 bg-yellow-300 rounded-full" />
           <span className="w-3 h-3 bg-green-500 rounded-full" />
-          
+          <p className={`font-semibold text-lg text-center mx-50 font-['Adwaita Mono'] Sans-serif ${darkmode?'text-gray-50':'text-gray-800'}`}>Rezolvia<span className={`${darkmode?'text-gray-700':'text-gray-500'}`}>-Edited</span></p>
         </div>
         <div className="flex space-x-2">
             <button
@@ -148,10 +148,10 @@ const ScriptEditorEventLog = () => {
       </div>
 
       {/* Log Content */}
-      <div className={`${darkmode ? "bg-black" : "bg-white"} p-4 font-mono text-sm`}>
+      <div className={`${darkmode ? "bg-gray-800" : "bg-white"} p-4 font-mono text-sm`}>
         <div className="space-y-1">
           {getFilteredData().map((item) => (
-            <div key={item.id} className={`${getTypeBg(item.type)} ${darkmode ? "bg-gray-900" : "bg-white"} rounded p-2`}>
+            <div key={item.id} className={`${getTypeBg(item.type)} ${darkmode ? "bg-gray-900" : "bg-white"}  p-2`}>
               <div className="flex items-start space-x-2">
                 
                 <div className="flex-shrink-0">
@@ -213,7 +213,7 @@ const ScriptEditorEventLog = () => {
       </div>
 
       {/* Status Bar */}
-      <div className={`${darkmode?'bg-black':'bg-gray-50'} flex items-center justify-between p-2  text-xs text-gray-600 rounded`}>
+      <div className={`${darkmode?'bg-gray-800':'bg-gray-50'} flex items-center justify-between p-2  text-xs text-gray-600`}>
         <div className="flex items-center space-x-4">
           <span>Ready</span>
           <span>•</span>

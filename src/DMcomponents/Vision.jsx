@@ -17,6 +17,7 @@ const VisionSection = () => {
           className="lg:w-1/2"
         >
           <video autoPlay muted loop src='https://cdn.pixabay.com/video/2017/11/29/13111-245530624_large.mp4' alt="Tech Innovation"
+          oncontextmenu="return false;"
             className="w-full h-auto object-cover rounded-lg shadow-xl"
           />
         </motion.div>

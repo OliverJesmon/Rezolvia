@@ -18,6 +18,7 @@ const VisionSection = () => {
         >
           <img src="https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_960_720.jpg" alt="Tech Innovation"
             className="w-full h-auto object-cover rounded-lg shadow-xl"
+            oncontextmenu="return false;"
           />
         </motion.div>
 

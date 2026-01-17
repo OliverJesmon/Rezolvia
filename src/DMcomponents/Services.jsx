@@ -24,7 +24,7 @@ const cards = [
   {
     title: "Custom Software Solutions",
     description: "ERP, CRM, inventory management, or mobile apps — tailored to streamline your business operations.",
-    video: "https://cdn.pixabay.com/video/2020/05/29/40572-425837205_tiny.mp4"
+    video: "https://cdn.pixabay.com/video/2019/02/01/21117-315137086_large.mp4"
   }
 ];
 
@@ -44,6 +44,7 @@ function Services() {
               autoPlay
               muted
                 src={card.video}
+                oncontextmenu="return false;"
                 alt={card.title}
                 className="absolute inset-0 w-full h-full object-cover"
               />

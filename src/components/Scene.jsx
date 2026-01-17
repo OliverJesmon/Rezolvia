@@ -110,5 +110,5 @@ export default function GLBViewer({ modelPath = '/Model/cpu.glb' }) {
   width: '300px',
   height: '300px',
  
-  overflow: 'hidden'}} />;
+  overflow: 'hidden'}} oncontextmenu="return false;" />;
 }

@@ -19,10 +19,10 @@ function Header() {
   }, [location.pathname]);
 
   const navItems = [
-    { path: '/', label: 'Home' },
-    { path: '#services', label: 'Services' },
-    { path: '/digitalmedia', label: 'Digital Media' },
-    { path: '#contact', label: 'Contact' }
+    { id: 1, path: '/', label: 'Home' },
+    { id: 2, path: '#services', label: 'Services' },
+    { id: 3, path: '/digitalmedia', label: 'Digital Media' },
+    { id: 4, path: '#contact', label: 'Contact' }
   ]
   return (
     <>
@@ -48,7 +48,7 @@ function Header() {
           </button>
           {navItems.map((item) => (
             <Link
-              key={item.path}
+              key={item.id}
               to={item.path}
               className={`text-xl font-medium ${
                 location.pathname === item.path
@@ -65,13 +65,13 @@ function Header() {
     <nav className={`${isMobileMenuOpen?'hidden':''} nav-bar fixed top-0 w-full z-50 md:p-4`}>
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         <div className="font-dream text-2xl font-semibold text-gray-700">
-          <img src={Logo} alt="Logo" className="h-12 m-4" />
+          <img src={Logo} alt="Logo" className="h-12 m-4" oncontextmenu="return false;"/>
         </div>
       
         
       <div className={`hidden md:flex mb-2 ${isScrolled?'bg-black text-white transition-all duration-300':'bg-white text-black transition-all duration-300'} rounded-xl space-x-4 px-30 py-2`}>
           {navItems.map((item) => (
-            <Link to={item.path} className={` relative group${
+            <Link key={item.id} to={item.path} className={` relative group${
                     location.pathname === item.path
                       ? 'text-red-700'
                       : 'hover:text-red-700'

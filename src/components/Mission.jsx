@@ -27,7 +27,7 @@ const MisionSection = () => {
   return (
     <section className="py-20 px-6 md:px-12 lg:px-24 text-white">
       
-      <div className="grid grid-col md:grid-cols-3 gap-6 bg-[url('./assets/mission.jpg')] backdrop-blur-xl justify-center opacity-80 bg-cover bg-center p-35 rounded-xl">
+      <div className="grid grid-col md:grid-cols-3 gap-6 bg-[url('./assets/mission.jpg')] backdrop-blur-xl justify-center opacity-80 bg-cover bg-center p-35 rounded-xl" oncontextmenu="return false;">
         {beliefs.map((belief, i) => (
       <motion.div
         key={i}

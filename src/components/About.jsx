@@ -1,6 +1,6 @@
 // AboutSection.jsx
 import { motion} from 'framer-motion';
-import Photo from '../assets/logo.png';
+
 import GLBViewer from './Scene';
 const AboutSection = () => {
   return (
